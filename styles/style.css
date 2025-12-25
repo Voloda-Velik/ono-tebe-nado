@@ -1,1 +1,329 @@
-/* место для вашего кода */
+.header {
+    display:grid;
+    grid-template-columns: 1fr min-content 1fr;
+    font-size: 18px;
+}
+
+.header_nav {
+    padding: 133px 36px 138px 50px;
+}
+
+.header_menu {
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction:row;
+    text-transform: none;
+    list-style: circle;
+}
+
+.header_no_circle {
+    list-style: none;
+}
+
+.header_border {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.header_logo {
+    display:block;
+    width: 148px;
+    padding-top: 92px;
+}
+.header_logo_image {
+    width:100%;
+}
+
+.header_address{
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.2;
+    font-style: normal;
+    padding-left: 184px;
+    padding-right: 50px;
+    padding-top: 95px;
+    justify-self: end;
+    
+}
+
+.cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 757px;
+    z-index: 0;   
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cover_title {
+    padding: 165px 50px 207px 50px;
+    font-size: 100px;
+    color:white;
+    text-transform: uppercase;
+    line-height: 1.3;
+    display: block;
+    letter-spacing: 27px;
+    max-height: 385px;
+
+}
+
+.accent_span {
+    display:block;
+
+}
+
+.text_center {
+    text-align: center;
+
+}
+
+.text_right {
+    text-align: right;
+}
+
+.cover_description {
+    display:flex;
+    position:relative;
+    padding:275px 50px 50px 50px;
+    justify-content:space-between;
+    z-index: 2;
+    color:white;
+
+}
+
+.cover_description_text {
+    font-size: 22px;
+    text-transform: uppercase;
+    color:white;
+    align-self:center;
+    word-spacing:20px;
+    line-height:28px;
+    word-spacing: 20px;
+}
+
+.bet_button {
+    padding:0;
+    border:none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    text-transform:uppercase;
+    border:1px solid white;
+    text-align: center;
+    line-height: auto;
+    padding: 12px 32px 11px 31px;   
+}
+.lots_card_list_item {
+    width: 334px;
+    min-height: 596px;
+    display:flex;
+    flex-direction: column;
+}
+
+.card_type_film {
+    height: 100%;
+    background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    display:flex;
+    align-items: end;
+
+}
+.card_type_book {
+    height: 100%;
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    display:flex;
+}
+.card_type_picture {
+    height: 100%;
+    background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    display:flex;
+}
+
+.card_link {
+    height: 100%;
+    text-decoration: none;
+}
+.lots {
+    padding:180px 24px 0 24px;
+    margin:auto;
+}
+.lots_heading {
+    padding:0 0 0 40px;
+    text-transform: uppercase;
+}
+
+.lots_card_list {
+    display:flex;
+    gap:25px;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding:27px 0 0 0;
+}
+.card_text {
+    padding-inline:40px;
+    margin-top:auto;
+    color:white;
+    font-size:20px;
+    padding-bottom:48px;
+}
+
+.card_about {
+    font-size: 20px;
+    display:block;
+    padding:30px 0 0 40px;
+    text-decoration: none;
+}
+.card_about_span {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.card_title_span {
+    border-bottom:1px solid white;
+    display:inline;
+}
+
+.card_title {
+    color:white;
+    padding:48px 40px 0 40px;
+    font-size:22px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    padding: 120px  24px 0;
+    gap: 25px;
+    place-content: center;
+}
+
+.about_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 35px; */
+    /* padding: 35px 0 0 47px; */
+    /* row-gap: 30px;
+    row-gap: 70px; */
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
+    justify-self: center;
+    align-self: self-start;
+}
+
+.about_logo_image{
+    padding: 64px 46px 62px 47px;
+}
+
+.about_column{
+    padding-top: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 100px;
+}
+
+.about_title{
+    text-transform: uppercase;
+    padding: 3px 0 0 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;  
+    letter-spacing: 0%;
+}
+.about_text_5px {
+    padding-right:5px;
+}
+
+.footer {
+    padding-top:180px;
+    padding-bottom:82px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+}
+
+.footer_address {
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.2;
+    font-style: normal;
+    justify-self: start;
+    padding-left:50px;
+}
+.footer_menu {
+    padding-top:1px;
+    display: block;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+.footer_social_list {
+    padding-right:50px;
+    display:flex;
+    justify-content: end;
+    gap:48px;
+    list-style:none;
+    padding-top:1px;
+}
+.footer_social_icon {
+    width: 48px;
+    height: 48px;
+}
+.footer_link {
+    text-decoration: none;
+}
+.footer_menu_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1px ;
+    padding-right: 50px;
+}
+.footer_border {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
